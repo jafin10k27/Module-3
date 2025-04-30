@@ -1,30 +1,35 @@
 # Exp.No:3e
-## SEB - STRING SLICING
-
----
+## SEB -Write a Python program to find sequences of Upper case letters joined with a underscore.
 
 ### AIM  
-To write a Python function that accepts a string and forms a new string by reversing the characters from the **4th position to the 10th position** with **alternate characters**, and then prints the new string.
-
----
+To find sequences of uppercase letters joined with an underscore in a given string using regular expressions.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Accept a string as input.  
-3. Take a slice of the input string from index **2** to **10** (Python uses 0-based indexing, so index 2 refers to the 3rd character, i.e., the 4th character in natural terms).  
-4. Reverse the sliced substring.  
-5. Extract every second character from the reversed substring using slicing (`[::2]`).  
-6. Print the final processed string.  
-7. Terminate the program.
+1.Take the input string s from the user.
 
----
+2.Use the re.search() function to search for a pattern of uppercase letters followed by an underscore and then more uppercase letters (e.g., ABC_DEF).
+
+3.If the pattern is found, print "Found a match!".
+
+4.If the pattern is not found, print "Not matched!".
 
 ### PROGRAM
 
 ```
+# Reg.No-212223020018
+# Name-Mohamed Jafin S
+import re
+s=input()
+result=re.search('[A-Z]+_[A-Z]',s)
+if result:
+    print("Found a match!")
+else:
+    print("Not matched!")
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/3ec5e89d-9770-4a24-a84f-3f74346fc918)
 
 ### RESULT
+The program successfully finds and matches sequences of uppercase letters joined with an underscore. If such a sequence is found, it prints "Found a match!", otherwise "Not matched!".
