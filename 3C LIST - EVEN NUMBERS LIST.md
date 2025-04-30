@@ -1,31 +1,36 @@
-# Exp.No:3c
-## LIST - EVEN NUMBERS LIST
 
----
+# Exp.No:3c
+## LIST - Write a Python program to sum all the items in a list. Given List is [1,2,-8].
 
 ### AIM  
-To write a Python function that accepts a number **N** and creates a list containing all even numbers up to **N**.
-
----
+To calculate the sum of all elements in a given list.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Accept an integer `a` from the user.  
-3. Create an empty list `l`.  
-4. Use a `for` loop to iterate through numbers from `1` to `a - 1`:  
-   - For each number `i`, check if it is even using `i % 2 == 0`.  
-   - If it is even, append `i` to the list `l`.  
-5. Print the final list `l` containing all the even numbers.  
-6. Terminate the program.
+1.Initialize a variable s to store the sum, starting from 0.
 
----
+2.Loop through each element x in the given list.
+
+3.For each element x, add its value to s (i.e., s += x).
+
+4.After the loop finishes, print the value of s.
+
 
 ### PROGRAM
 
 ```
-```
+# Reg.No-212223020018
+# Name-Mohamed Jafin S
+list=[1,2,-8]
 
+s=0
+for x in list:
+    s+=x
+print(s)
+
+```
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/9e611f26-4510-458e-bb2b-8825316047f8)
 
 ### RESULT
+For the given list [1, 2, -8], the sum of all items is:-5
